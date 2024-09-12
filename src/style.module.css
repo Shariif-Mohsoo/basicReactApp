@@ -1,0 +1,74 @@
+html {
+  font-size: 62.5%;
+}
+.container {
+  border: 0.5rem solid goldenrod;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 4rem;
+}
+.heading_1 {
+  font-size: 7rem;
+  text-align: center;
+  background-color: violet;
+  color: white;
+  text-shadow: 0rem 2rem 3rem darkblue;
+}
+.heading_padding {
+  padding: 1rem;
+}
+.heading_2 {
+  font-size: 6rem;
+  text-align: center;
+  color: royalblue;
+}
+
+.heading_3 {
+  font-size: 4rem;
+  text-align: justify;
+  color: rebeccapurple;
+}
+
+.heading_4 {
+  font-size: 3rem;
+  text-align: end;
+  font-weight: 600;
+  color: yellowgreen;
+}
+
+.input-div {
+  border: 0.3rem solid steelblue;
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+.input-div:nth-last-child(1) {
+  margin-top: 1rem;
+}
+.input {
+  width: 100%;
+  border: 0.2rem solid gray;
+  padding: 2rem 1rem;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.input::placeholder {
+  color: green;
+}
+.input:focus {
+  outline: none;
+  border: 0.2rem solid green;
+}
+
+/*
+  Some rules related to css modules.
+  
+  You cannot directly reference or define a class in a React component and then use it in a CSS Module file.
+   Here’s why and how to handle this:
+Why It Doesn’t Work:
+1-) CSS Modules Scope: CSS Modules scope class names locally to the component,
+generating unique class names to avoid conflicts. Class names are not globally accessible.
+2-) Definition and Usage: Class names defined in CSS Modules can only be applied using
+ the imported styles object. They cannot be referenced or utilized outside of the CSS Module file.
+*/
